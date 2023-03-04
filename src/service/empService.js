@@ -1,8 +1,8 @@
 import axios from "axios";
 const BASE_URI="http://localhost:8686/api/emp";
 
-function saveEmployee(employee){
-axios.post(BASE_URI+'/save',employee)
+export async function saveEmployee(employee){
+return await axios.post(BASE_URI+'/save',employee)
     
 }
 export async function  showEmployees(){
